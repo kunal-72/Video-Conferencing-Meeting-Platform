@@ -22,8 +22,9 @@ import StopScreenShareIcon from "@mui/icons-material/StopScreenShare";
 import ChatIcon from "@mui/icons-material/Chat";
 
 import "../style/VideoMeet.css";
+import server from "../environment";
 
-const serverUrl = "http://localhost:3000/";
+const serverUrl = `${server}`;
 
 const connections = {};
 
