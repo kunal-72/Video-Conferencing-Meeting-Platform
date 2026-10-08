@@ -11,7 +11,7 @@ const mongoose = require('mongoose');
 const connectToSocket = require("./controllers/socketManager.js")
 const router = require("./routes/user.js")                           
 const app = express() 
-const port = 3000;
+const port = process.env.PORT||3000;
 
 const server = createServer(app);
 const io = connectToSocket(server)
